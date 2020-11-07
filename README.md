@@ -93,12 +93,19 @@ $ cd your-theme-name
 $ yarn & yarn build
 ```
 
-### yarn build commands
-```bash 
-$ yarn start 
-``` 
- Compile assets when file changes are made, start Browsersync session
+### Yarn build commands
+- `yarn start` — Compile assets when file changes are made, start Browsersync session
+- `yarn build` — Compile and optimize the files in your assets directory
+- `yarn build:production` — Compile assets for production
 
+## Useful Packages
+- `composer require log1x/sage-directives` — Sage Directives
+- `composer require log1x/navi` — Better Navigation
+- `composer require log1x/sage-svg` — SVG Directive
+- `composer require "mwdelaney/sage-acf-gutenberg-blocks"` — Sage ACF Gutenberg Blocks
+- `composer require "mwdelaney/sage-advanced-custom-fields"` — Sage ACF Local JSON support
+
+## Adding Tailwind
 
 
 
