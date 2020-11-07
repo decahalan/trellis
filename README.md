@@ -32,7 +32,7 @@
   <a href="https://roots.io">Official Website</a> | <a href="https://roots.io/docs/trellis/master/installation/">Documentation</a> | <a href="CHANGELOG.md">Change Log</a>
 </p>
 
-## Intergalactic Instuctions
+## Intergalactic Instructions
 
 ### Using trellis-cli
 
@@ -42,7 +42,35 @@ Create a new project:
 $ cd Sites
 $ trellis new example.com
 ```
-this takes awhile
+follow instuctions may need to enter password. this takes awhile
+
+## Local development setup
+
+1. Review the automatically created site in `group_vars/development/wordpress_sites.yml`
+2. Customize settings if necessary
+
+Start the Vagrant virtual machine:
+
+```bash
+$ cd example.com
+$ trellis up
+```
+this takes awhile too.  hopefully this works. lol
+
+## WP CLI
+
+Open VM CLI
+
+```bash
+$ trellis ssh development
+```
+https://developer.wordpress.org/cli/commands/
+
+### Change Password
+
+```bash
+trellis ssh development
+```
 
 ## Supporting
 
