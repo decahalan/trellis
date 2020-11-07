@@ -64,13 +64,43 @@ Open VM CLI
 ```bash
 $ trellis ssh development
 ```
+
+to exit
+```bash
+$ exit
+```
 https://developer.wordpress.org/cli/commands/
 
 ### Change Password
 
 ```bash
-trellis ssh development
+$ cd /srv/www/example.com/current
+# check your user ID / username
+$ wp user list
+
+$ wp user update 123 --user_pass=your-password
 ```
+
+## Install Sage
+
+```bash
+$ cd Sites/example.com/site/web/app/themes
+
+# add dev-master for sage 10
+$ composer create-project roots/sage your-theme-name dev-master
+
+$ cd your-theme-name
+$ yarn & yarn build
+```
+
+### yarn build commands
+```bash 
+$ yarn start 
+``` 
+ Compile assets when file changes are made, start Browsersync session
+
+
+
 
 ## Supporting
 
