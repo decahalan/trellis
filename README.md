@@ -32,6 +32,18 @@
   <a href="https://roots.io">Official Website</a> | <a href="https://roots.io/docs/trellis/master/installation/">Documentation</a> | <a href="CHANGELOG.md">Change Log</a>
 </p>
 
+## Intergalactic Instuctions
+
+### Using trellis-cli
+
+Create a new project:
+
+```bash
+$ cd Sites
+$ trellis new example.com
+```
+this takes awhile
+
 ## Supporting
 
 **Trellis** is an open source project and completely free to use.
